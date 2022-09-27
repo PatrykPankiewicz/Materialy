@@ -1,0 +1,27 @@
+Total size in bytes: 30820
+Total size of writeAll blocks in bytes: 8072
+Total size of non-writeAll blocks in bytes: 22748
+Section Switch Time for all blocks is 0.0029467858057419787 years.
+Memory durability is 58.93571611483957 years.
+Total size of readAll blocks in bytes: 23812
+Total size of non-ReadAll blocks in bytes: 7008
+Total Raw blocks size: 22827
+
+NvM WriteAll occurences:
+Line: 871  
+Line: 553  
+Line: 1201 
+Line: 1686 
+Line: 1424 
+Line: 187  
+Line: 1242 
+Line: 1727 
+
+NvM Write occurences:
+Line: 181 
+Line: 404 
+Line: 566 
+Line: 581 
+Line: 187 
+Line: 365 
+Line: 525 

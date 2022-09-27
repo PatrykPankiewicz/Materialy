@@ -1,0 +1,8 @@
+TimeManager - przed - 3385 bytes, 86 messages
+TimeManager afert - 152 bytes, 76 messages, 4371 in FIBEX, 192 strings
+
+DTC Manager + Cable - 2210 bytes in 58 messages
+DTC Manager + Cable after - 142 bytes, 71 messages, 2272 in FIBEX, 166 strings
+
+DiagAppl - 1984 bytes in strings, 54 messages
+AFTER DiagAppl - 118 bytes, 59 messages, 2878 in FIBEX, 117 strings

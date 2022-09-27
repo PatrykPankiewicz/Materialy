@@ -1,0 +1,11 @@
+# Author Patryk Pankiewicz
+# The script is written in XLST language for EB Tresos tool.
+# It extracts the information about NvM configuration from Tresos.
+# Documentation of how to execute the code is available in the Tresos delivery under "Developers Guide"
+
+
+Name,BlockId,Priority,Length,NumberOfCopies,BlockType,CRC,ReadAllEnabled,WriteAllEnabled,NvMExtraBlockChecks,NvMInitBlockCallback,NvMResistantToChangedSw
+[!LOOP "/AUTOSAR/TOP-LEVEL-PACKAGES/NvM/ELEMENTS/NvM/NvMBlockDescriptor/*"!]
+[!"name (.)"!],[!"./NvMNvramBlockIdentifier"!],[!"./NvMBlockJobPriority"!],[!"./NvMNvBlockLength"!],[!"./NvMNvBlockNum"!],[!"./NvMBlockManagementType"!],[!IF "node:exists(./NvMBlockCrcType)"!]
+[!"./NvMBlockCrcType"!][!ELSE!]NOCRC[!ENDIF!],[!"./NvMSelectBlockForReadAll"!],[!IF "node:exists(./NvMSelectBlockForWriteAll)"!][!"./NvMSelectBlockForWriteAll"!][!ELSE!]ERROR[!ENDIF!],[!"./NvMExtraBlockChecks"!],[!IF "node:exists(./NvMInitBlockCallback)"!][!"./NvMInitBlockCallback"!][!ELSE!]NOCALLBACK[!ENDIF!],[!"./NvMResistantToChangedSw"!]
+[!ENDLOOP!]
